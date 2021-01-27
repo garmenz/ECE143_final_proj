@@ -13,32 +13,11 @@ Real World Application: The solution of this project can help users gather a lis
 
 
 Timeline:
-Step
-Estimated Completion Time
-Person(s) in charge
-Data Preprocessing
-Extract
-Clean Up
-
-Jan 31st 
-All of us
-Rating System (backend)
-Depending on a user’s preference(make,year,model), return the best value car
-
-Feb 14th
-Team(Cid,Manuel, Jiawen)
-Rating System (frontend)
-Interaction with users
-
-Feb 7th
-Team(Minting, Sunny)
-Depreciation Evaluation
-Feb 21st
-Team(Cid,Manuel, Jiawen)
-Data Visualization
-Feb 21st
-Team(Minting, Sunny)
-Presentation + Documentation
-Feb 28th
-Everybody
-
+|  Step                        | Estimated Completion Time | Person(s) in charge      |
+|------------------------------|---------------------------|--------------------------|
+| Data Preprocessing           | Jan 31st                  | Everybody                |
+| Rating System (backend)      | Feb 14th                  | Team(Cid,Manuel, Jiawen) |
+| Rating System (frontend)     | Feb 7th                   | Team(Minting, Sunny)     |
+| Depreciation Evaluation      | Feb 21st                  | Team(Cid,Manuel, Jiawen) |
+| Data Visualization           | Feb 21st                  | Team(Minting, Sunny)     |
+| Presentation + Documentation | Feb 28th                  | Everybody                |
