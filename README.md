@@ -6,6 +6,7 @@
 Build a system that provides some guidelines for people who want to buy a used car; given a specific budget, the system determines the cars that are in the best condition for that price and also determines how fast these cars devalue against different models.
 ### Dataset: 
 [Used Car dataset](https://www.kaggle.com/austinreese/craigslist-carstrucks-data) from Kaggle
+
 The dataset contains twenty-six columns, which cover states of the vehicle like image, size, entry price, years and manufacturer that we can use to analyze.
 ### Proposed Solution and Real World Application:
 - Proposed Solution: With the dataset we have, we would first preprocess the data to gather the quantities of our interest and perform some visualization of the dataset. Then in order to build our recommendation system for the customer, we would perform some different selection cut depending on the budget given by the customer. The selection would return a list of cars that we recommended based on our consideration over the condition, the mileage, the year-made and etc.. With the list of cars in the recommendation list, we would also evaluate the depreciation of a certain manufacture/model over a certain period of time and determine which manufacture/model can best preserve its value.
