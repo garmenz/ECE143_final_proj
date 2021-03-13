@@ -36,6 +36,8 @@ def decide_value_of_cars(carInfo, importance):
     # so to calculate the importance score, I want to measure that off of 'condition' 'odometer' and 'title_status'
     # 'manufacturer', 'model', and 'year' are just details of the car
 
+    assert isinstance(carInfo, pd.Series)
+
     condition = carInfo.condition  # (new, excellent, like new, good, fair, salvage) :type: string
     if condition is None:
         condition = 'unspecified'
