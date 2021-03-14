@@ -1,5 +1,3 @@
-
-
 import pandas as pd 
 from matplotlib import pyplot as plt 
 
@@ -11,10 +9,10 @@ from openpyxl.chart import (
 )
 
 
-df = pd.read_csv('vehicles.csv')
-rec_dataset = df[['condition', 'odometer', 'title_status', 'manufacturer', 'model', 'price', 'year', 'image_url']]
-# drop empty entry
-rec_dataset.dropna(inplace=True)
+# df = pd.read_csv('vehicles.csv')
+# rec_dataset = df[['condition', 'odometer', 'title_status', 'manufacturer', 'model', 'price', 'year', 'image_url']]
+# # drop empty entry
+# rec_dataset.dropna(inplace=True)
 
 
 def decide_value_of_cars(carInfo, importance):
@@ -199,7 +197,7 @@ def cars_in_price_range(cars_dt, lower_bound, upper_bound,  num_of_sel=5, import
     sub_set['score'] = scores # add the scores to the dataframe under 'score' column
     sub_set.sort_values(by='score',ascending = order, inplace=True) # Sort by scores, tops scores at the beggining
     sub_set = sub_set.head(num_of_sel) # get the first num_of_sel rows
-    print(sub_set)
+#     print(sub_set)
     return sub_set
 
 
