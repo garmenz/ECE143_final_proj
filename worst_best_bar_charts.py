@@ -359,5 +359,5 @@ def generate_bar_charts():
     ws.add_chart(chart, "E5")
     wb.save("bar2_3d.xlsx")
     
-generate_bar_charts()   
+  
     
