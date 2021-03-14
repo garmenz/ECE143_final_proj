@@ -24,6 +24,7 @@ The dataset contains twenty-six columns, which cover states of the vehicle like 
 
 ## How To Run Code:
 In order to run this project successfully please follow the steps below.
+if vehicles.csv is not found in the repository
 1. Click [Here](https://www.kaggle.com/austinreese/craigslist-carstrucks-data) in order to download the dataset from Kaggle
 2. Make sure to unzip the dataset once it has finished downloading
 3. Copy the vehicles.csv file inside the code repository folder
@@ -41,10 +42,10 @@ In order to run this project successfully please follow the steps below.
         + Plots a odometer vs price graph
     util.py
         + Contains helper functions to run the backend
-    Front_End.ipynb
-        + Contains the dashboard for the recommendation system
     Distributions.py
         + Contains the plots for popularity charts
+    worst_best_bar_charts.py
+        + Contains the plotting method for evaluating a certain number of best and worst cars for each manufacturer
 ## Modules
     ipywidgets
     IPython.display
@@ -54,12 +55,11 @@ In order to run this project successfully please follow the steps below.
     IPython.core.display
     scipy.stats
     matplotlib 
-    util
     numpy
     pandas
     IPython.core.display
-    collections
     chart_studio.plotly
     plotly.graph_objects
     plotly.offline
     plotly.express
+    openpyxl
