@@ -24,6 +24,7 @@ The dataset contains twenty-six columns, which cover states of the vehicle like 
 
 ## How To Run Code:
 In order to run this project successfully please follow the steps below.<br>
+- Our main result contains in Used_car_recommended_system.ipynb, open a jupyter notebook for the file and run the cells from top to bottom. 
 If vehicles.csv is not found in the repository or could not successfully load, try the following: 
 1. Click [Here](https://www.kaggle.com/austinreese/craigslist-carstrucks-data) in order to download the dataset from Kaggle
 2. Make sure to unzip the dataset once it has finished downloading
