@@ -29,7 +29,7 @@ if vehicles.csv is not found in the repository
 2. Make sure to unzip the dataset once it has finished downloading
 3. Copy the vehicles.csv file inside the code repository folder
 4. Make sure there is a vehicles.csv in your local directory
-5. As long as you are running the python or juypter file inside of the local respository, there should be no problems and running each file normally.
+5. As long as you are running the python or jupyter file inside of the local respository, there should be no problems and running each file normally.
         
 ## Link to Presentation
 [Click Here for Google Slides Presentation](https://docs.google.com/presentation/d/1JSlg4pieSZyxN_lUIDyFe51r9pSUTss_vcwsqD657C8/edit?usp=sharing)
