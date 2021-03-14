@@ -2,31 +2,6 @@ import pandas as pd
 from plotly.offline import iplot
 import plotly.graph_objs as go
 
-df = pd.read_csv('vehicles.csv',
-                 usecols=[4,5,6,7,8,9,10,11,12,13,15,16,17,18,22,23,24],
-                 encoding='latin')
-
-
-df.loc[df['year'] >= 2005, 'year_range'] = '2005_and_above'
-df.loc[df['year'] < 2005, 'year_range'] = '2000_to_2005'
-df.loc[df['year'] < 2000, 'year_range'] = '1990_to_2000'
-df.loc[df['year'] < 1990, 'year_range'] = '1970_to_1990'
-df.loc[df['year'] < 1970, 'year_range'] = '1950_to_1970'
-df.loc[df['year'] <= 1950, 'year_range'] = '1950_and_below'
-
-df.loc[df['odometer'] >= 200000, 'odometer_range'] = '200k_and_above'
-df.loc[df['odometer'] < 200000, 'odometer_range'] = '180k_to_200k'
-df.loc[df['odometer'] < 180000, 'odometer_range'] = '160k_to_180k'
-df.loc[df['odometer'] < 160000, 'odometer_range'] = '140k_to_160k'
-df.loc[df['odometer'] < 140000, 'odometer_range'] = '120k_to_140k'
-df.loc[df['odometer'] < 120000, 'odometer_range'] = '100k_to_120k'
-df.loc[df['odometer'] < 100000, 'odometer_range'] = '80k_to_100k'
-df.loc[df['odometer'] < 80000, 'odometer_range'] = '60k_to_80k'
-df.loc[df['odometer'] < 60000, 'odometer_range'] = '40k_to_60k'
-df.loc[df['odometer'] < 40000, 'odometer_range'] = '20k_to_40k'
-df.loc[df['odometer'] <= 20000, 'odometer_range'] = '20k_and_below'
-
-
 
 def pie_count(data, field):
     '''

@@ -14,7 +14,8 @@ def cars_in_price_range(cars_dt, lower_bound, upper_bound,  num_of_sel=5, import
     @ list of cars in pandas dataframe with information of the cars
     '''
     scores = list()
-    sub_set = cars_dt.query('@lower_bound <= price <= @upper_bound') # get all the cars within the proice range
+    sub_set = cars_dt.copy()
+    sub_set = sub_set.query('@lower_bound <= price <= @upper_bound') # get all the cars within the proice range
     for index, row in sub_set.iterrows():
         scores.append( decide_value_of_cars(row,importance) )
     sub_set['score'] = scores # add the scores to the dataframe under 'score' column
